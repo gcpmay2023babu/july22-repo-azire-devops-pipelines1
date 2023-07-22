@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: gjuly22aks2 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gjuly22aks2
+  template:
+    metadata:
+      labels:
+        app: gjuly22aks2 
+    spec:
+      containers:
+        - name: gjuly22aks2 
+          image: azurecontregjuly21.azurecr.io/gjuly22aks2
+          ports:
+          - containerPort: 80
