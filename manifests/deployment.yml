@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: imagejuly22evening1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: imagejuly22evening1
+  template:
+    metadata:
+      labels:
+        app: imagejuly22evening1 
+    spec:
+      containers:
+        - name: imagejuly22evening1 
+          image: azurecontregjuly21.azurecr.io/imagejuly22evening1
+          ports:
+          - containerPort: 80
