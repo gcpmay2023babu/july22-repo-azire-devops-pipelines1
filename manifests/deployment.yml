@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: gjuly23image1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gjuly23image1
+  template:
+    metadata:
+      labels:
+        app: gjuly23image1 
+    spec:
+      containers:
+        - name: gjuly23image1 
+          image: azurecontregjuly21.azurecr.io/gjuly23image1
+          ports:
+          - containerPort: 80
