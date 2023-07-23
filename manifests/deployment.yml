@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gjuly23image1 
 spec:
-  replicas: 3 
+  replicas: 2 
   selector:
     matchLabels:
       app: gjuly23image1
